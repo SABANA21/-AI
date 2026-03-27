@@ -35,7 +35,7 @@ llm = ChatOpenAI(
 
 main_placeholder = st.empty()
 
-# ✅ LOAD EXISTING FAISS INDEX (Problem 2 Fix)
+# ✅ LOAD EXISTING FAISS INDEX 
 if "vector_store" not in st.session_state:
     if os.path.exists(index_path):
         embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
